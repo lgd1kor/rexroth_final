@@ -1,0 +1,62 @@
+.modal-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(49, 49, 49, 0.8);
+  }
+  
+.modal-content {
+    width: 400px;
+    height: 350px;
+    background: #ffffff;
+    padding: 14px 28px;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.modal-close-button {
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .input-and-close-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .input-and-close-container dc-ui-input-wrapper {
+    flex-grow: 1;
+    margin-right: 10px; /* Adjust as needed for spacing */
+  }
+  
+  .input-and-close-container dc-ui-button {
+    flex-shrink: 0;
+  }
+  
+  
+  .modal-list {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 40px;
+  }
+  
+  .modal-list-item {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  

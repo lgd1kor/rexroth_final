@@ -1,0 +1,57 @@
+/* footer.css */
+
+footer {
+  padding-top: 150px;
+}
+
+.footer-color {
+  background: linear-gradient(to bottom, #002B49, #003e6b);
+  padding: 10px;
+  text-align: left;
+  margin-top: 0; /* Remove the top margin to ensure the footer is directly attached */
+  color: #ffffff;
+}
+.footer-content {
+  width: 1320px;
+  display: flex; /* Ensure items are aligned in a row */
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between; /* Space between text and buttons */
+  margin: 0 auto; /* Center the content horizontally */
+  padding-bottom: 30px;
+}
+
+.footer-text {
+  text-align: left;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+.footer-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap if needed */
+}
+
+.footer-button {
+  margin: 0; /* Remove margin to use gap for spacing */
+}
+.footer-icons {
+  width: 500px;
+  display: flex; /* Ensure items are aligned in a row */
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between; /* Space between text and buttons */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+
+.diagonal-footer { 
+  background-color: #002B49; 
+  color: white; 
+  padding: 0; /* Remove the padding to eliminate any extra space */
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+  margin: 0; /* Remove margin to avoid any gap */
+  height: 100px; /* Adjust height if necessary */
+  margin-bottom: -2px;
+  position: relative; /* Ensure the z-index works with relative positioning */
+  z-index: 1; /* Set a lower z-index so the button can float above */
+} 

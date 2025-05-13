@@ -1,0 +1,68 @@
+/* Styling for the main floating button */
+.floating-button {
+    position: fixed;
+    bottom: 170px;
+    right: 30px;
+    background-color: #d50005;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.floating-button.clicked {
+    background-color: #99aebb; /* Change background to black when clicked */
+}
+
+/* Additional buttons (hidden by default) */
+.child-button {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d50005;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+
+/* Make the child buttons visible when the main button is clicked */
+.child-button.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Container to group the buttons */
+.floating-button-container {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    right: 110%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    background-color: white; /* White background color */
+    color: black; /* Text color */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Optional: adds rounded corners */
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 999;
+    /* Remove box-shadow */
+  }
+  
+  

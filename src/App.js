@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FinalCall from './FinalCall';
 
-function App() {
+const App = () => {
+  const initialFilepath = 'bosch_rexroth_mcd/industrial_hydraulics/power_units/std_power_units/cytropac_asmtab.prj'; // Default initial filepath
+  // const initialFilepath = 'bosch_rexroth_mcd/industrial_hydraulics/valves/directional_valves/direct_on_off_valves/we_10_h_asmtab.prj'; // Default initial filepath
+  // const initialFilepath = 'bosch_rexroth_mcd/industrial_hydraulics/valves/directional_valves/direct_on_off_valves/weh_wh_1x_asmtab.prj';
+  // const initialFilepath = 'bosch_rexroth_mcd/industrial_hydraulics/valves/pressure_valves/press_reducing_valves_proportional/z3dree10_1x_asmtab.prj';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <FinalCall initialFilepath={initialFilepath} />
     </div>
   );
-}
+};
 
 export default App;
